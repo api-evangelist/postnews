@@ -1,7 +1,23 @@
 aid: postnews
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/postnews.png
 name: Post.news
-description: Post.news is a company surfaced as a portfolio company of a16z and added to the API Evangelist
-  network as a stub for enrichment. This profile is a lead awaiting the enrichment pipeline.
+description: Post.news was a social-news and microblogging platform positioned as a Twitter/X
+  alternative, backed by a16z and founded by former Waze CEO Noam Bardin. It was added to
+  the API Evangelist network as a stub for enrichment. As of this enrichment pass the
+  company has no discoverable public API surface, developer program, or documentation, and
+  the consumer web property appears to be offline (see x-website-status). This profile is
+  retained as a portfolio-lead record.
 url: https://raw.githubusercontent.com/api-evangelist/postnews/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -9,14 +25,32 @@ x-backed-by:
 - a16z
 x-tier: stub
 x-tier-reason: portfolio-lead
+x-website-status:
+  checked: '2026-07-20'
+  method: dns-probe
+  apex: post.news has no A record (only Google Workspace MX records remain)
+  www: www.post.news is a CNAME to d1rf01kevlsj6y.cloudfront.net, which no longer resolves
+    (dangling CloudFront alias)
+  subdomains: api./docs./developer./dev. have no A record (api. returns SERVFAIL)
+  conclusion: no live web or API presence detected; consumer platform appears defunct
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-20'
 tags:
 - Company
+- Social
+- Social Media
+- News
+- Microblogging
+- Media
 apis: []
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
+x-enrichment:
+  date: '2026-07-20'
+  status: nochange
+  artifacts_added: 0
+  pass: local-v1
