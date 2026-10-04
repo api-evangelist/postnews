@@ -50,7 +50,7 @@ modified: '2026-07-20'
 tags:
 - Company
 - Social
-- Social-Media
+- Social Media
 - News
 - Microblogging
 - Media
@@ -61,6 +61,7 @@ tags_raw:
 - News
 - Microblogging
 - Media
+- Social-Media
 apis: []
 maintainers:
 - FN: Kin Lane
